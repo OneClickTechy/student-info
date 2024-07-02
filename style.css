@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+main{
+    flex-grow: 2;
+}
+.main-heading{
+    text-align: center;
+}
+table ,td , th, tr{
+    border: 1px solid black;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="main-heading">Students Corner</h1>
+    </header>
+    <main>
+      <header>
+        <h2>Please fill this details for future use</h2>
+      </header>
+      <section>
+        <form action="">
+          <fieldset>
+            <legend>Student Info</legend>
+            <label for="name"
+              >Name : <input type="text" name="name" id="name" required
+            /></label>
+            <label for="age"
+              >Age : <input type="number" name="age" id="age" required
+            /></label>
+
+            <label for="male"
+              >Gender :
+              <input type="radio" name="gender" id="male" />Male</label
+            >
+            <label for="female"
+              ><input type="radio" name="gender" id="female" />Female</label
+            >
+
+            <label for="email"
+              >Email : <input type="email" name="email" id="email" required
+            /></label>
+            <label for="mobile"
+              >Mobile : <input type="tel" id="mobile" required
+            /></label>
+            <label for="course"
+              >Course :
+              <select name="course" id="course" required>
+                <option class="courses" value="">Select any course</option>
+                <option class="courses" value="C/C++">C/C++</option>
+                <option class="courses" value="JAVA">JAVA</option>
+                <option class="courses" value="PYTHON">PYTHON</option>
+              </select>
+            </label>
+
+            <button type="submit" id="saveData">Save</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <table>
+          <tbody id="studentInfo">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>Course</th>
+              <th>Action</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <h2>Thankyou</h2>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
