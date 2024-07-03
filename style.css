@@ -8,21 +8,87 @@ body{
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
     
 }
 main{
     flex-grow: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .main-heading{
     text-align: center;
 }
-table ,td , th, tr{
-    border: 1px solid black;
+#saveData{
+    font-size: inherit;
+    padding: 1rem;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td,th{
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: auto;;
+}
+th{
+    border-bottom: 3px solid black;
+    background-color: rgb(41, 136, 21);
+    color: white;
+}
+tr:nth-child(even){
+    background-color: rgba(34, 73, 26, 0.568);
+    color: white;
 }
     .student_form{
     display: flex;
     flex-direction: column;
-    width:100%;
     gap: 1rem;
     align-content: center;
+    width: 60%;
+}
+.deleterow{
+    width: 100%;
+   
+}
+form{display: flex;
+justify-content: center;
+}
+
+input {
+    width: inherit;
+    font-size: inherit;
+    margin-right: 0;
+    margin-left: auto ;
+   
+}
+input:not(.no-float) , select:not(.no-float){
+    float: right;
+    width: 50%;
+}
+#male:after , #female:after{
+   clear : both;
+   content: ""   ;
+}
+fieldset{
+    border: none;
+}
+legend{
+    border-radius: 20px;
+    background-image: linear-gradient(blue , rgb(77, 229, 235));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.float-right{
+    float: right;
+    width: 50%;
 }

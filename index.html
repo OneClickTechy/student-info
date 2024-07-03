@@ -19,23 +19,25 @@
           <fieldset class="student_form">
             <legend>Student Info</legend>
             <label for="name"
-              >Name : <input class="right"  type="text" name="name" id="name" required
+              >Name : <input class="right"  autocomplete="name" type="text" name="name" id="name" required
             /></label>
             <label for="age"
               >Age : <input class="right" type="number" name="age" id="age" required
             /></label>
-            <section>
+            <section>Gender :
+              <span class="float-right">
               <label for="male"
-                >Gender :
-                <input class="right" type="radio" name="gender" id="male" />Male</label
+                >
+                <input  type="radio" name="gender" class="no-float" id="male" />Male</label
               >
               <label for="female"
-                ><input class="right" type="radio" name="gender" id="female" />Female</label
+                ><input  type="radio" name="gender" id="female" class="no-float"/>Female</label
               >
+            </span>
             </section>
 
             <label for="email"
-              >Email : <input class="right" type="email" name="email" id="email" required
+              >Email : <input class="right" autocomplete="email" type="email" name="email" id="email" required
             /></label>
             <label for="mobile"
               >Mobile : <input class="right" type="tel" id="mobile" required
@@ -58,16 +60,9 @@
       <section>
         <table>
           <tbody id="studentInfo">
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Gender</th>
-              <th>Email</th>
-              <th>Mobile</th>
-              <th>Course</th>
-              <th>Action</th>
-            </tr>
+            <tr class='showHide'><th>Name</th><th>Age</th><th>Gender</th><th>Email</th><th>Mobile</th><th>Course</th><th>Action</th></tr>
           </tbody>
+         
         </table>
       </section>
     </main>

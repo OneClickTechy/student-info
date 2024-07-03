@@ -41,8 +41,10 @@ saveData.addEventListener("click", (event) => {
     }
   }
   let tdcourse = course;
-
+  
+  
   let table = document.querySelector("#studentInfo");
+ 
   let tr = document.createElement("tr");
   table.append(tr);
 
@@ -75,6 +77,7 @@ saveData.addEventListener("click", (event) => {
   );
 
   //test
+  console.log(tdname == true)
 });
 
 function deleterow(event) {
